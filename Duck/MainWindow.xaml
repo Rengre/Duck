@@ -1,0 +1,21 @@
+﻿<Window x:Class="Duck.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Duck"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+    <Grid x:Name="imageBackground" Margin="0,0,0,-50" MouseMove="Grid_MouseMove">
+        <Grid.Background>
+            <ImageBrush ImageSource="C:\Users\REN\source\repos\Duck\Duck\Resources\grass.jpg"/>
+        </Grid.Background>
+        
+        <Image x:Name="target" HorizontalAlignment="Left" Height="100" Margin="88,157,0,0" VerticalAlignment="Top" Width="100" Source="C:\Users\REN\source\repos\Duck\Duck\Resources\target.png" MouseMove="mouseMove" />
+        <Label x:Name="counterLabel" Content="Duck Counter: 2/0 " HorizontalAlignment="Left" Margin="32,10,0,0" VerticalAlignment="Top" Width="354" Height="84" Foreground="#FFF11515" FontSize="36" FontWeight="Bold" />
+        <Image x:Name="duck" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Source="C:\Users\REN\source\repos\Duck\Duck\Resources\duck.png" Margin="626,142,0,0" MouseDown="duck_shoot"/>
+       <Image x:Name="duck1" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Source="C:\Users\REN\source\repos\Duck\Duck\Resources\duck.png" Margin="663,262,0,0" MouseDown="duck1_shoot"/>
+
+    </Grid>
+</Window>
